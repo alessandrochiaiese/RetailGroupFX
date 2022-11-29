@@ -16,7 +16,6 @@ import landing.views
 
 urlpatterns = [
     path("", landing.views.index, name="index"),
-    path("db/", landing.views.db, name="db"),
     path("about/", landing.views.about, name="about"),
     path("contact/", landing.views.contact, name="contact"),
     path("facts/", landing.views.facts, name="facts"),
@@ -28,6 +27,7 @@ urlpatterns = [
     path("testimonial/", landing.views.testimonial, name="testimonial"),
     path("404/", landing.views.error_404, name="error_404"),
     path("support/", landing.views.support, name="support"),
+    #path("db/", landing.views.db, name="db"),
     #path("admin/", admin.site.urls),
 ]
 
