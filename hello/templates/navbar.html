@@ -1,3 +1,4 @@
+{% load static %}
 <!-- Navbar Start -->
 <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
     <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
@@ -15,7 +16,7 @@
         <a href="{% url 'index' %}" class="navbar-brand ms-4 ms-lg-0">
 
             <a class="display-6 text-primary m-0" href="{% url 'index' %}">
-                <img src="{#{% static 'img/logoFX.png' %}#}" alt="" width="50" height="50">
+                <img src=" {% static 'img/logoFX.png' %} " alt="" width="50" height="50">
                 Retail Group
             </a>
         </a>
