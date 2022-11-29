@@ -25,7 +25,7 @@ def project(request):
 
 def service(request):
     return render(request, "service.html")
-    
+
 def team(request):
     return render(request, "team.html")
 
@@ -34,6 +34,12 @@ def terms(request):
 
 def testimonial(request):
     return render(request, "testimonial.html")
+    
+def error_404(request):
+    return render(request, "error_404.html")
+    
+def support(request):
+    return render(request, "support.html")
 
 
 def db(request):
