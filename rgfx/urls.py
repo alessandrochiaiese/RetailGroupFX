@@ -4,7 +4,7 @@ from django.contrib import admin
 
 admin.autodiscover()
 
-import hello.views
+import landing.views
 
 # To add a new path, first import the app:
 # import blog
@@ -15,19 +15,19 @@ import hello.views
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("", hello.views.index, name="index"),
-    path("db/", hello.views.db, name="db"),
-    path("about/", hello.views.about, name="about"),
-    path("contact/", hello.views.contact, name="contact"),
-    path("facts/", hello.views.facts, name="facts"),
-    path("feature/", hello.views.feature, name="feature"),
-    path("project/", hello.views.project, name="project"),
-    path("service/", hello.views.service, name="service"),
-    path("team/", hello.views.team, name="team"),
-    path("terms/", hello.views.terms, name="terms"),
-    path("testimonial/", hello.views.testimonial, name="testimonial"),
-    path("404/", hello.views.error_404, name="error_404"),
-    path("support/", hello.views.support, name="support"),
+    path("", landing.views.index, name="index"),
+    path("db/", landing.views.db, name="db"),
+    path("about/", landing.views.about, name="about"),
+    path("contact/", landing.views.contact, name="contact"),
+    path("facts/", landing.views.facts, name="facts"),
+    path("feature/", landing.views.feature, name="feature"),
+    path("project/", landing.views.project, name="project"),
+    path("service/", landing.views.service, name="service"),
+    path("team/", landing.views.team, name="team"),
+    path("terms/", landing.views.terms, name="terms"),
+    path("testimonial/", landing.views.testimonial, name="testimonial"),
+    path("404/", landing.views.error_404, name="error_404"),
+    path("support/", landing.views.support, name="support"),
     #path("admin/", admin.site.urls),
 ]
 

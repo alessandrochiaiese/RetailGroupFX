@@ -41,7 +41,7 @@ def error_404(request):
 def support(request):
     return render(request, "support.html")
 
-
+"""
 def db(request):
 
     greeting = Greeting()
@@ -50,3 +50,4 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, "db.html", {"greetings": greetings})
+"""
